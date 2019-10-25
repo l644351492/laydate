@@ -1519,7 +1519,7 @@
         };
       });
       
-      if(that.endState){ //重新选择
+      if(that.endState || !that.endState && !that.startState && that.startDate && that.endDate){ //重新选择
         setDateTime();
         delete that.endState;
         delete that.endDate;
